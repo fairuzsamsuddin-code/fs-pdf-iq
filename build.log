@@ -1,0 +1,251 @@
+Command line invocation:
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/xcodebuild -project FSPDFIQ.xcodeproj -scheme FSPDFIQ -configuration Release -sdk iphoneos -destination generic/platform=iOS -derivedDataPath build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= build
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = 
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    SDKROOT = iphoneos18.5
+
+note: Using codesigning identity override: 
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'FSPDFIQ' in project 'FSPDFIQ' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 7a5d057e7ac7392808563da783083f57
+Build description path: /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/XCBuildData/7a5d057e7ac7392808563da783083f57.xcbuilddata
+ClangStatCache /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ.xcodeproj
+    /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -o /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache
+
+CreateBuildDirectory /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ.xcodeproj
+    builtin-create-build-directory /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products
+
+CreateBuildDirectory /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ.xcodeproj
+    builtin-create-build-directory /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ-f787ba2c5ca76c8d99cee4afc3484c95-VFS-iphoneos/all-product-headers.yaml
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ.xcodeproj
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ-f787ba2c5ca76c8d99cee4afc3484c95-VFS-iphoneos/all-product-headers.yaml
+
+CreateBuildDirectory /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ.xcodeproj
+    builtin-create-build-directory /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos
+
+CreateBuildDirectory /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ.xcodeproj
+    builtin-create-build-directory /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ_const_extract_protocols.json (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.SwiftFileList (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.SwiftConstValuesFileList (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.LinkFileList (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ-OutputFileMap.json (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ.hmap (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ.hmap
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ.DependencyStaticMetadataFileList (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ.DependencyMetadataFileList (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-project-headers.hmap (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-project-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-own-target-headers.hmap (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-generated-files.hmap (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-generated-files.hmap
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-all-target-headers.hmap (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-all-non-framework-target-headers.hmap (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    write-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-all-non-framework-target-headers.hmap
+
+MkDir /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    /bin/mkdir -p /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app
+
+MkDir /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_output/thinned (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    /bin/mkdir -p /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_output/thinned
+
+MkDir /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_output/unthinned (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    /bin/mkdir -p /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_output/unthinned
+
+GenerateAssetSymbols /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Assets.xcassets (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Assets.xcassets --compile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_dependencies --output-partial-info-plist /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 16.0 --platform iphoneos --bundle-identifier my.fsiq.pdfiq --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CompileAssetCatalogVariant thinned /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Assets.xcassets (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    /Applications/Xcode_16.4.app/Contents/Developer/usr/bin/actool /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Assets.xcassets --compile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 16.0 --platform iphoneos
+/* com.apple.actool.compilation-results */
+/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_generated_info.plist_thinned
+/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_output/thinned/AppIcon60x60@2x.png
+/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_output/thinned/AppIcon76x76@2x~ipad.png
+/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_output/thinned/Assets.car
+
+
+SwiftDriver FSPDFIQ normal arm64 com.apple.xcode.tools.swift.compiler (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-SwiftDriver -- /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name FSPDFIQ -O -whole-module-optimization -enforce-exclusivity\=checked @/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -target arm64-apple-ios16.0 -g -module-cache-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos -F /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache -output-file-map /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-generated-files.hmap -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-own-target-headers.hmap -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-project-headers.hmap -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ-Swift.h -working-directory /Users/runner/work/fs-pdf-iq/fs-pdf-iq -no-emit-module-separately-wmo
+
+SwiftCompile normal arm64 Compiling\ Components.swift,\ ConvertEngine.swift,\ EditorView.swift,\ FSPDFIQApp.swift,\ HomeView.swift,\ MiscViews.swift,\ OfficeImport.swift,\ OfficeWriters.swift,\ OptimizeEngine.swift,\ OrganizeEngine.swift,\ PDFCore.swift,\ PageViews.swift,\ PptxRenderer.swift,\ SelfTest.swift,\ Settings.swift,\ SimpleToolView.swift,\ StampEngine.swift,\ Theme.swift,\ ToolCatalog.swift,\ VisionEngine.swift,\ WebPDF.swift,\ ZipKit.swift,\ GeneratedAssetSymbols.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Views/Components.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Engine/ConvertEngine.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Views/EditorView.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/App/FSPDFIQApp.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Views/HomeView.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Views/MiscViews.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Engine/OfficeImport.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Core/OfficeWriters.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Engine/OptimizeEngine.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Engine/OrganizeEngine.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Core/PDFCore.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Views/PageViews.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Engine/PptxRenderer.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/App/SelfTest.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Core/Settings.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Views/SimpleToolView.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Engine/StampEngine.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Views/Theme.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/App/ToolCatalog.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Engine/VisionEngine.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Engine/WebPDF.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Core/ZipKit.swift /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'FSPDFIQ' from project 'FSPDFIQ')
+
+CompileSwift normal arm64 (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    
+/Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Engine/ConvertEngine.swift:269:13: warning: no calls to throwing functions occur within 'try' expression
+            try autoreleasepool {
+            ^
+/Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Views/MiscViews.swift:230:17: warning: stored property 'synth' of 'Sendable'-conforming class 'Speaker' has non-sendable type 'AVSpeechSynthesizer'; this is an error in the Swift 6 language mode
+    private let synth = AVSpeechSynthesizer()
+                ^
+/Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/AVFAudio.framework/Headers/AVSpeechSynthesis.h:227:12: note: class 'AVSpeechSynthesizer' does not conform to the 'Sendable' protocol
+@interface AVSpeechSynthesizer : NSObject
+           ^
+/Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Engine/VisionEngine.swift:98:13: warning: no calls to throwing functions occur within 'try' expression
+            try autoreleasepool {
+            ^
+
+SwiftDriver\ Compilation FSPDFIQ normal arm64 com.apple.xcode.tools.swift.compiler (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-Swift-Compilation -- /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name FSPDFIQ -O -whole-module-optimization -enforce-exclusivity\=checked @/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -target arm64-apple-ios16.0 -g -module-cache-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos -F /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache -output-file-map /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-generated-files.hmap -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-own-target-headers.hmap -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-project-headers.hmap -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ-Swift.h -working-directory /Users/runner/work/fs-pdf-iq/fs-pdf-iq -no-emit-module-separately-wmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling Components.swift, ConvertEngine.swift, EditorView.swift, FSPDFIQApp.swift, HomeView.swift, MiscViews.swift, OfficeImport.swift, OfficeWriters.swift, OptimizeEngine.swift, OrganizeEngine.swift, PDFCore.swift, PageViews.swift, PptxRenderer.swift, SelfTest.swift, Settings.swift, SimpleToolView.swift, StampEngine.swift, Theme.swift, ToolCatalog.swift, VisionEngine.swift, WebPDF.swift, ZipKit.swift, GeneratedAssetSymbols.swift (in target 'FSPDFIQ' from project 'FSPDFIQ')
+
+SwiftDriver\ Compilation\ Requirements FSPDFIQ normal arm64 com.apple.xcode.tools.swift.compiler (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name FSPDFIQ -O -whole-module-optimization -enforce-exclusivity\=checked @/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -target arm64-apple-ios16.0 -g -module-cache-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos -F /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/SDKStatCaches.noindex/iphoneos18.5-22F76-a529daf784b3616c7c04a36aeb7f5c05.sdkstatcache -output-file-map /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-generated-files.hmap -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-own-target-headers.hmap -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ-project-headers.hmap -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ-Swift.h -working-directory /Users/runner/work/fs-pdf-iq/fs-pdf-iq -no-emit-module-separately-wmo
+
+SwiftMergeGeneratedHeaders /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/FSPDFIQ-Swift.h /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ-Swift.h (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ-Swift.h -o /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/DerivedSources/FSPDFIQ-Swift.h
+
+Copy /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.swiftmodule/arm64-apple-ios.swiftmodule /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.swiftmodule (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.swiftmodule /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.swiftmodule/arm64-apple-ios.swiftmodule
+
+Copy /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.swiftmodule/arm64-apple-ios.swiftdoc /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.swiftdoc (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.swiftdoc /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.swiftmodule/arm64-apple-ios.swiftdoc
+
+Copy /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.swiftmodule/arm64-apple-ios.abi.json /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.abi.json (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.abi.json /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.swiftmodule/arm64-apple-ios.abi.json
+
+Copy /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.swiftsourceinfo (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.swiftsourceinfo /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
+
+Ld /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/FSPDFIQ normal (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios16.0 -isysroot /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk -Os -L/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos -L/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos -F/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos -F/Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos -filelist /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.LinkFileList -Xlinker -rpath -Xlinker @executable_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ_lto.o -Xlinker -dependency_info -Xlinker /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.swiftmodule -o /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/FSPDFIQ
+
+LinkAssetCatalog /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Assets.xcassets (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-linkAssetCatalog --thinned /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_output/thinned --thinned-dependencies /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_generated_info.plist_unthinned --output /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app --plist-output /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_generated_info.plist
+note: Emplaced /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/AppIcon60x60@2x.png (in target 'FSPDFIQ' from project 'FSPDFIQ')
+note: Emplaced /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/Assets.car (in target 'FSPDFIQ' from project 'FSPDFIQ')
+note: Emplaced /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/AppIcon76x76@2x~ipad.png (in target 'FSPDFIQ' from project 'FSPDFIQ')
+
+ProcessInfoPlistFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/Info.plist /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Info.plist (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-infoPlistUtility /Users/runner/work/fs-pdf-iq/fs-pdf-iq/FSPDFIQ/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -additionalcontentfile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/assetcatalog_generated_info.plist -requiredArchitecture arm64 -o /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/Info.plist
+
+ExtractAppIntentsMetadata (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name FSPDFIQ --sdk-root /Applications/Xcode_16.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk --xcode-version 16F6 --platform-family iOS --deployment-target 16.0 --bundle-identifier my.fsiq.pdfiq --output /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app --target-triple arm64-apple-ios16.0 --binary-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/FSPDFIQ --dependency-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ_dependency_info.dat --stringsdata-file /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.SwiftFileList --metadata-file-list /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ.DependencyMetadataFileList --static-metadata-file-list /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ.DependencyStaticMetadataFileList --swift-const-vals-list /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/Objects-normal/arm64/FSPDFIQ.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-29 06:19:15.869 appintentsmetadataprocessor[2603:11725] Starting appintentsmetadataprocessor export
+2026-10-29 06:19:15.876 appintentsmetadataprocessor[2603:11725] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CopySwiftLibs /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/FSPDFIQ --scan-folder /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/Frameworks --scan-folder /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/PlugIns --scan-folder /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/SystemExtensions --scan-folder /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/Extensions --platform iphoneos --toolchain /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+GenerateDSYMFile /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app.dSYM /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/FSPDFIQ (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/FSPDFIQ -o /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app.dSYM
+
+AppIntentsSSUTraining (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    /Applications/Xcode_16.4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/Info.plist --temp-dir-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/ssu --bundle-id my.fsiq.pdfiq --product-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app --extracted-metadata-path /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app/Metadata.appintents --metadata-file-list /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Intermediates.noindex/FSPDFIQ.build/Release-iphoneos/FSPDFIQ.build/FSPDFIQ.DependencyMetadataFileList --archive-ssu-assets
+2026-10-29 06:19:15.909 appintentsnltrainingprocessor[2605:11727] Parsing options for appintentsnltrainingprocessor
+2026-10-29 06:19:15.910 appintentsnltrainingprocessor[2605:11727] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-RegisterExecutionPolicyException /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app
+
+Validate /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    builtin-validationUtility /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app -infoplist-subpath Info.plist
+
+Touch /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app (in target 'FSPDFIQ' from project 'FSPDFIQ')
+    cd /Users/runner/work/fs-pdf-iq/fs-pdf-iq
+    /usr/bin/touch -c /Users/runner/work/fs-pdf-iq/fs-pdf-iq/build/Build/Products/Release-iphoneos/FSPDFIQ.app
+
+note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'FSPDFIQ' from project 'FSPDFIQ')
+** BUILD SUCCEEDED **
+

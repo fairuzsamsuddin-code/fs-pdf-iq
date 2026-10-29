@@ -1,0 +1,50 @@
+SELFTEST START
+SELFTEST DIR /Users/runner/Library/Developer/CoreSimulator/Devices/DC4CD8B3-4457-4153-9087-A0D7A2F9BFD9/data/Containers/Data/Application/ACEC7569-6908-42B8-9666-A139CD2EDBF3/tmp/FSPDFIQ
+SELFTEST PASS merge — 5p 23 KB (0.0s)
+SELFTEST PASS split — 2 files (0.0s)
+SELFTEST PASS remove — 2p 14 KB (0.0s)
+SELFTEST PASS reorder — 3p 15 KB (0.0s)
+SELFTEST PASS rotate — 3p 15 KB (0.0s)
+SELFTEST PASS booklet — 2p 15 KB (0.0s)
+SELFTEST PASS nup — 1p 18 KB (0.0s)
+SELFTEST PASS compress — 3p 15 KB PDF ini sudah dioptimumkan — fail asal dikekalkan. (0.2s)
+SELFTEST PASS compress-target — Sudah di bawah 100 KB (15 KB) — fail asal dikekalkan. (0.0s)
+SELFTEST PASS crop — 3p 16 KB (0.0s)
+SELFTEST PASS grayscale — 3p 217 KB (0.1s)
+SELFTEST PASS repair — Struktur dokumen dibina semula — 3 halaman dipulihkan. (0.0s)
+SELFTEST PASS flatten — 3p 15 KB (0.0s)
+SELFTEST PASS pdfa — 3p 447 KB (0.1s)
+SELFTEST PASS magic — 4p 605 KB (7.2s)
+SELFTEST PASS inksaver — 2p 160 KB (1.5s)
+SELFTEST PASS thesis — 3p 16 KB (0.0s)
+SELFTEST PASS cornell — 2p 26 KB (0.0s)
+SELFTEST PASS ocr — 31 chars: Scanned receipt | Jumlah RM 45.90 (1.3s)
+SELFTEST PASS jpg2pdf — 1p 146 KB (0.0s)
+SELFTEST PASS pdf2jpg — 3 images (0.0s)
+SELFTEST PASS pdf2png — 1 images (0.0s)
+SELFTEST PASS pdf2text — — Halaman 1 — |  | Page 1 — Penyata Akaun | Date Description Amoun (0.0s)
+SELFTEST PASS pdf2word — 2 KB (0.0s)
+SELFTEST PASS pdf2word-layout — 264 KB (0.0s)
+SELFTEST PASS pdf2excel — Page 1 — Penyata Akaun | Date,Description,Amount | 01/10/2026 Gaji bulanan,,,"5,200.00" | 02/10/2026 Bayaran takaful,,,,-310.50 | No. IC: 900101-14-5678 | Page  (0.0s)
+SELFTEST PASS pdf2pptx — 349 KB (0.0s)
+SELFTEST PASS pdf2dxf — 3 dxf (0.0s)
+SELFTEST PASS extract-images — 1 images (0.0s)
+SELFTEST PASS pagenumbers — 3p 22 KB (0.0s)
+SELFTEST PASS bates — 3p 23 KB (0.0s)
+SELFTEST PASS watermark — 3p 23 KB (0.0s)
+SELFTEST PASS protect — 3p 16 KB encrypted (0.0s)
+SELFTEST PASS unlock — 3p 15 KB (0.0s)
+SELFTEST PASS metadata — ["keywords": "a, b", "author": "Fairuz", "title": "Ujian"] (0.0s)
+SELFTEST PASS redact — 3 boxes, text remains: false (0.2s)
+SELFTEST PASS edit-flatten — 3p 32 KB has text: true (0.1s)
+SELFTEST PASS compare — Perbezaan pada halaman: 1 (0.5s)
+SELFTEST PASS zip — 2 entries (0.0s)
+SELFTEST PASS word2pdf(docx) — 3p, text: Page 1 — Penyata Akaun Date Description 
+SELFTEST PASS excel2pdf — 3p
+SELFTEST PASS pptx2pdf — 3p
+SELFTEST PASS md2pdf — 1p, text: Tajuk
+SELFTEST PASS txt2pdf — 1p
+SELFTEST PASS fixture sample.xlsx — 2p
+SELFTEST PASS fixture sample.pptx — 3p
+SELFTEST PASS fixture sample.docx — 1p
+SELFTEST END
