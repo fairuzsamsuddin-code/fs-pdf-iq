@@ -359,6 +359,7 @@ enum OfficeImport {
 
     // MARK: RTF / TXT
 
+    @MainActor
     static func textToPDF(_ url: URL) throws -> Data {
         let ext = url.pathExtension.lowercased()
         var attr: NSAttributedString

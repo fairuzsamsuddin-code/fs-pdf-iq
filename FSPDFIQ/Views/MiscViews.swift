@@ -10,7 +10,10 @@ struct CropView: View {
     let tool: Tool
     @State private var url: URL?
     @State private var doc: PDFDocument?
-    @State private var top = 0.05, bottom = 0.05, left = 0.05, right = 0.05
+    @State private var top = 0.05
+    @State private var bottom = 0.05
+    @State private var left = 0.05
+    @State private var right = 0.05
     @State private var range = ""
     @State private var result: ToolResult?
     @State private var error: String?
