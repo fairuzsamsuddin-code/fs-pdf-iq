@@ -57,6 +57,41 @@ jobs:
           name: fs-PDF-IQ-ipa
           path: fs-PDF-IQ-unsigned.ipa
 
+      - name: Simulator smoke test + screenshots
+        if: always()
+        continue-on-error: true
+        run: |
+          mkdir -p out/shots
+          set +e
+          xcodebuild -project FSPDFIQ.xcodeproj -scheme FSPDFIQ -configuration Debug -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' -derivedDataPath simbuild build > out/sim-build.log 2>&1
+          grep -E "error:" out/sim-build.log | sort -u > out/sim-errors.txt; rm -f out/sim-build.log
+          APP=simbuild/Build/Products/Debug-iphonesimulator/FSPDFIQ.app
+          if [ ! -d "$APP" ]; then echo "no simulator build"; exit 0; fi
+          UDID=$(xcrun simctl list devices available -j | python3 -c "import json,sys; d=json.load(sys.stdin)['devices']; c=[x for k,v in d.items() if 'iOS' in k for x in v if x['name'].startswith('iPhone 16 Pro') or x['name'].startswith('iPhone 1')]; print(c[0]['udid'])")
+          echo "Simulator $UDID"
+          xcrun simctl boot "$UDID"; xcrun simctl bootstatus "$UDID" -b
+          xcrun simctl install "$UDID" "$APP"
+          BID=my.fsiq.pdfiq
+          xcrun simctl launch --console-pty "$UDID" $BID -selftest > out/selftest.log 2>&1 &
+          for i in $(seq 1 60); do grep -q "SELFTEST END" out/selftest.log && break; sleep 3; done
+          xcrun simctl terminate "$UDID" $BID
+          shot() { xcrun simctl terminate "$UDID" $BID >/dev/null 2>&1; xcrun simctl launch "$UDID" $BID "$@"; sleep 7; xcrun simctl io "$UDID" screenshot "out/shots/$NAME.png"; }
+          NAME=01-home shot
+          NAME=02-home-en shot -lang en
+          xcrun simctl ui "$UDID" appearance dark; NAME=03-home-dark shot -lang ms; xcrun simctl ui "$UDID" appearance light
+          NAME=04-compress shot -lang ms -tool compress-pdf -sample
+          NAME=05-workbench shot -lang ms -tool workbench -sample
+          NAME=06-edit shot -lang ms -tool edit-pdf -sample
+          NAME=07-sign shot -lang ms -tool sign-pdf -sample
+          NAME=08-redact shot -lang en -tool redact-pdf -sample
+          NAME=09-scan shot -lang ms -tool scan-to-pdf
+          NAME=10-ai shot -lang ms -tool pdf-to-ai -sample
+          NAME=11-listen shot -lang ms -tool listen-pdf -sample
+          NAME=12-crop shot -lang ms -tool crop-pdf -sample
+          NAME=13-preview shot -lang ms -tool preview-pdf -sample
+          grep -h "SELFTEST" out/selftest.log > out/selftest.txt || true
+
       - name: Publish results to the "ci" branch
         if: always()
         run: |

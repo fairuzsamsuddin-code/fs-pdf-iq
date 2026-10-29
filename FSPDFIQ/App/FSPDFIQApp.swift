@@ -7,6 +7,8 @@ struct FSPDFIQApp: App {
 
     init() {
         Workspace.clearOld()
+        let args = ProcessInfo.processInfo.arguments
+        if let i = args.firstIndex(of: "-lang"), i + 1 < args.count, let l = Lang(rawValue: args[i + 1]) { AppSettings.shared.lang = l }
     }
 
     var body: some Scene {
@@ -53,6 +55,15 @@ struct RootView: View {
                 .navigationDestination(for: Tool.self) { tool in
                     ToolHostView(tool: tool, initialFiles: router.takeFiles(for: tool))
                 }
+        }
+        .task {
+            let args = ProcessInfo.processInfo.arguments
+            if SelfTest.isRequested { await SelfTest.run() }
+            if let i = args.firstIndex(of: "-tool"), i + 1 < args.count, let t = Catalog.tool(args[i + 1]) {
+                var files: [URL] = []
+                if args.contains("-sample") { files = [SelfTest.samplePDF()] }
+                router.go(t, files: files)
+            }
         }
     }
 }

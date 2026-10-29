@@ -428,7 +428,7 @@ struct SimpleToolView: View {
         return ToolResult(files: [out], message: L("\(pages) page(s) created.", "\(pages) halaman dihasilkan."))
     }
 
-    static func runPDF(tool: Tool, files: [URL], o: ToolOptions, outDir: URL, report: @escaping Progress) throws -> ToolResult {
+    nonisolated static func runPDF(tool: Tool, files: [URL], o: ToolOptions, outDir: URL, report: @escaping Progress) throws -> ToolResult {
         guard let src = files.first else { throw IQError.noInput }
         let base = Workspace.base(src)
         func out(_ suffix: String, _ ext: String = "pdf") -> URL { Workspace.unique(outDir, "\(base)\(suffix).\(ext)") }
@@ -528,7 +528,7 @@ struct SimpleToolView: View {
     }
 
     /// Adds a .zip when several files are produced.
-    static func withZip(_ outs: [URL], outDir: URL, name: String) throws -> [URL] {
+    nonisolated static func withZip(_ outs: [URL], outDir: URL, name: String) throws -> [URL] {
         guard outs.count > 1 else { return outs }
         let z = Workspace.unique(outDir, name + ".zip")
         try ZipWriter.zip(files: outs, to: z)

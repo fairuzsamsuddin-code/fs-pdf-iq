@@ -415,9 +415,11 @@ struct BoardContent: View {
 
     private func apply(_ op: @escaping (URL, URL) throws -> Void) {
         busy = true; error = nil
+        let model = self.model
+        let src: URL
+        do { src = try model.tempFile() } catch { self.error = error.localizedDescription; busy = false; return }
         Task.detached(priority: .userInitiated) {
             do {
-                let src = try model.tempFile()
                 let out = Workspace.unique(Workspace.newDir("Work"), "result.pdf")
                 try op(src, out)
                 let data = try Data(contentsOf: out)
