@@ -370,6 +370,7 @@ struct EditorContent: View {
                     }
                     .buttonStyle(SoftButtonStyle(tint: .fsRed))
                 }
+                .padding(.horizontal, 12)
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {

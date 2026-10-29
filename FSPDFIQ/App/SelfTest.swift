@@ -59,6 +59,7 @@ enum SelfTest {
     @MainActor
     static func run() async {
         log("START")
+        log("DIR " + Workspace.root.path)
         let pdf = samplePDF()
         let dark = samplePDF(pages: 2, dark: true)
         let photo = sampleImage()
@@ -140,21 +141,25 @@ enum SelfTest {
         do {
             let html = try OfficeImport.docxToHTML(try Data(contentsOf: docx))
             let data = try await WebPDF.render(html: html)
+            try? data.write(to: o("rt_word.pdf"))
             log("PASS word2pdf(docx) — \(PDFDocument(data: data)?.pageCount ?? 0)p, text: \(PDFDocument(data: data)?.string?.prefix(40) ?? "")")
         } catch { log("FAIL word2pdf — \(error.localizedDescription)") }
         if let x = xlsx {
             do {
                 let data = try await WebPDF.render(html: try OfficeImport.xlsxToHTML(try Data(contentsOf: x)), landscape: true)
+                try? data.write(to: o("rt_excel.pdf"))
                 log("PASS excel2pdf — \(PDFDocument(data: data)?.pageCount ?? 0)p")
             } catch { log("FAIL excel2pdf — \(error.localizedDescription)") }
         }
         do {
             let data = try PptxRenderer.render(try Data(contentsOf: pptx), progress: nil)
+            try? data.write(to: o("rt_pptx.pdf"))
             log("PASS pptx2pdf — \(PDFDocument(data: data)?.pageCount ?? 0)p")
         } catch { log("FAIL pptx2pdf — \(error.localizedDescription)") }
         do {
             let md = "# Tajuk\n\nSome **bold** and *italic* text.\n\n- one\n- two\n\n| a | b |\n|---|---|\n| 1 | 2 |\n\n```\ncode\n```"
             let data = try await WebPDF.render(html: OfficeImport.markdownToHTML(md))
+            try? data.write(to: o("rt_md.pdf"))
             log("PASS md2pdf — \(PDFDocument(data: data)?.pageCount ?? 0)p, text: \(PDFDocument(data: data)?.string?.prefix(30) ?? "")")
         } catch { log("FAIL md2pdf — \(error.localizedDescription)") }
         do {
@@ -162,6 +167,21 @@ enum SelfTest {
             let data = try OfficeImport.textToPDF(t)
             log("PASS txt2pdf — \(PDFDocument(data: data)?.pageCount ?? 0)p")
         } catch { log("FAIL txt2pdf — \(error.localizedDescription)") }
+        // Office fixtures copied in by CI
+        let fx = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("fixtures")
+        for f in (try? FileManager.default.contentsOfDirectory(at: fx, includingPropertiesForKeys: nil)) ?? [] {
+            do {
+                var data = Data()
+                switch f.pathExtension.lowercased() {
+                case "docx": data = try await WebPDF.render(html: try OfficeImport.docxToHTML(try Data(contentsOf: f)))
+                case "xlsx": data = try await WebPDF.render(html: try OfficeImport.xlsxToHTML(try Data(contentsOf: f)), landscape: true, margin: 24)
+                case "pptx": data = try PptxRenderer.render(try Data(contentsOf: f), progress: nil)
+                default: continue
+                }
+                try data.write(to: o("fx_" + f.deletingPathExtension().lastPathComponent + "_" + f.pathExtension + ".pdf"))
+                log("PASS fixture \(f.lastPathComponent) — \(PDFDocument(data: data)?.pageCount ?? 0)p")
+            } catch { log("FAIL fixture \(f.lastPathComponent) — \(error.localizedDescription)") }
+        }
         log("END")
         exit(0)
     }

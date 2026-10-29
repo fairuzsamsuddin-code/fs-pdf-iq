@@ -148,14 +148,14 @@ enum ConvertEngine {
 
     /// Groups characters into rows and cells using their positions.
     static func tableRows(for page: PDFPage) -> [[(x: CGFloat, text: String)]] {
-        guard let str = page.string, !str.isEmpty else { return [] }
         var glyphs: [Glyph] = []
-        let ns = str as NSString
         var heights: [CGFloat] = []
-        for i in 0..<ns.length {
-            let r = page.characterBounds(at: i)
-            let ch = Character(UnicodeScalar(ns.character(at: i)) ?? " ")
-            if ch.isWhitespace || ch.isNewline || r.width <= 0 || r.height <= 0 { continue }
+        let count = page.numberOfCharacters
+        for i in 0..<count {
+            guard let sel = page.selection(for: NSRange(location: i, length: 1)), let s = sel.string, let ch = s.first else { continue }
+            if ch.isWhitespace || ch.isNewline { continue }
+            let r = sel.bounds(for: page)
+            if r.width <= 0 || r.height <= 0 { continue }
             glyphs.append(Glyph(ch: ch, rect: r))
             heights.append(r.height)
         }

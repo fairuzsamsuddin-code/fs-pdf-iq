@@ -35,6 +35,11 @@ enum OptimizeEngine {
         var data: Data
         if let kb = targetKB, kb > 0 {
             let target = kb * 1024
+            if original <= Int64(target), let orig = try? Data(contentsOf: url) {
+                try orig.write(to: out)
+                return L("Already under \(kb) KB (\(ByteCountFormatter.string(fromByteCount: original, countStyle: .file))) — the original was kept.",
+                         "Sudah di bawah \(kb) KB (\(ByteCountFormatter.string(fromByteCount: original, countStyle: .file))) — fail asal dikekalkan.")
+            }
             let steps: [(CGFloat, CGFloat)] = [(150, 0.72), (130, 0.62), (110, 0.55), (96, 0.5), (85, 0.42),
                                                (72, 0.38), (72, 0.3), (60, 0.28), (50, 0.24), (42, 0.2)]
             var best: Data? = nil
@@ -48,7 +53,7 @@ enum OptimizeEngine {
             let (dpi, q): (CGFloat, CGFloat) = level == 0 ? (150, 0.75) : (level == 2 ? (80, 0.45) : (110, 0.6))
             data = try rasterPDF(doc, dpi: dpi, quality: q, progress: progress)
         }
-        if targetKB == nil, Int64(data.count) >= original, let orig = try? Data(contentsOf: url) {
+        if Int64(data.count) >= original, let orig = try? Data(contentsOf: url) {
             try orig.write(to: out)
             return L("This PDF is already well optimised — the original was kept.",
                      "PDF ini sudah dioptimumkan — fail asal dikekalkan.")
