@@ -357,6 +357,12 @@ enum OptimizeEngine {
             if mode == 1 || dark, let inv = CIFilter(name: "CIColorInvert") {
                 inv.setValue(ci, forKey: kCIInputImageKey)
                 if let o = inv.outputImage { ci = o }
+                // rotate hue back so inverted colours keep their original tint
+                if let hue = CIFilter(name: "CIHueAdjust") {
+                    hue.setValue(ci, forKey: kCIInputImageKey)
+                    hue.setValue(Double.pi, forKey: kCIInputAngleKey)
+                    if let o = hue.outputImage { ci = o }
+                }
             }
             if let cc = CIFilter(name: "CIColorControls") {
                 cc.setValue(ci, forKey: kCIInputImageKey)

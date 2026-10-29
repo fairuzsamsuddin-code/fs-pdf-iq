@@ -156,6 +156,7 @@ enum ConvertEngine {
             if ch.isWhitespace || ch.isNewline { continue }
             let r = sel.bounds(for: page)
             if r.width <= 0 || r.height <= 0 { continue }
+            if let last = glyphs.last, last.ch == ch, abs(last.rect.minX - r.minX) < 0.5, abs(last.rect.minY - r.minY) < 0.5 { continue }
             glyphs.append(Glyph(ch: ch, rect: r))
             heights.append(r.height)
         }
